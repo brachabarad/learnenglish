@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    background: skyblue;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  #balloon-container {
+    margin-top: 20px;
+    height: 60vh;
+    position: relative;
+  }
+  
+  .balloon {
+    width: 100px;
+    height: 130px;
+    background-color: red;
+    border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%;
+    color: white;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    animation: float 5s linear infinite;
+  }
+  
+  @keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100vh); }
+  }
+  
